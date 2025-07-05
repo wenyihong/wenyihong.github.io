@@ -220,3 +220,28 @@ span.highlight {
   font-weight: 500;
 }
 
+.toggle-button {
+    background: none;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.toggle-button:hover {
+    color: #004499;
+}
+
+.hidden-authors {
+    display: none;
+}
+
+.author-count {
+    color: #666;
+    font-style: italic;
+}
+
+

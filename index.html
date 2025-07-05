@@ -100,6 +100,67 @@
               <tr bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="image-container">
+                    <img src="images/GLM_4_1V_Thinking_thumbnail.jpg" alt="GLM-4.1V-Thinking Framework" width="250"
+                    style="border-style: none">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2507.01006">
+                    <span class="papertitle">GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning
+                    </span>
+                  </a>
+                  <br>
+                  <div class="author-list">
+                      <span id="visible-authors">
+                          <strong>Wenyi Hong</strong>, Wenmeng Yu, Xiaotao Gu, Guo Wang, Guobing Gan, Haomiao Tang, Jiale Cheng, Ji Qi, Junhui Ji, Lihang Pan, Shuaiqi Duan, Weihan Wang, Yan Wang, Yean Cheng, Zehai He, Zhe Su, Zhen Yang, Ziyang Pan, ..., Minlie Huang, Yuxiao Dong, Jie Tang
+                      </span>
+                      <span id="hidden-authors" class="hidden-authors">
+                          , Aohan Zeng, Baoxu Wang, Boyan Shi, Changyu Pang, Chenhui Zhang, Da Yin, Fan Yang, Guoqing Chen, Jiazheng Xu, Jiali Chen, Jing Chen, Jinhao Chen, Jinghao Lin, Jinjiang Wang, Junjie Chen, Leqi Lei, Letian Gong, Leyi Pan, Mingzhi Zhang, Qinkai Zheng, Sheng Yang, Shi Zhong, Shiyu Huang, Shuyuan Zhao, Siyan Xue, Shangqin Tu, Shengbiao Meng, Tianshu Zhang, Tianwei Luo, Tianxiang Hao, Wenkai Li, Wei Jia, Xin Lyu, Xuancheng Huang, Yanling Wang, Yadong Xue, Yanfeng Wang, Yifan An, Yifan Du, Yiming Shi, Yiheng Huang, Yilin Niu, Yuan Wang, Yuanchang Yue, Yuchen Li, Yutao Zhang, Yuxuan Zhang, Zhanxiao Du, Zhenyu Hou, Zhao Xue, Zhengxiao Du, Zihan Wang, Peng Zhang, Debing Liu, Bin Xu, Juanzi Li, Minlie Huang, Yuxiao Dong, Jie Tang
+                      </span>
+                      <span id="author-count" class="author-count"> (77 authors) </span>
+                      <button id="toggle-btn" class="toggle-button">Show all authors</button>
+                  </div>
+                  <p></p>
+                  <a href="https://arxiv.org/abs/2507.01006">ArXiv</a>
+                  /
+                  <a
+                    href="https://github.com/THUDM/GLM-4.1V-Thinking">GitHub</a>
+                  /
+                  <a href="https://huggingface.co/THUDM/GLM-4.1V-9B-Thinking">Open-sourced Models</a>
+                  /
+                  <a href="https://www.bigmodel.cn/dev/api/visual-reasoning-model/GLM-4.1V-Thinking">API</a>
+                  <!-- / -->
+                  <!-- <a href="data/cogvlm2.bib">bibtex</a> -->
+                  <p></p>
+                  <p>We present <strong> GLM-4.1V-Thinking </strong>, a VLM designed to advance general-purpose multimodal understanding and reasoning. With enhanced pre-trained base and carefully optimized multi-domain RL procedure, GLM-4.1V-9B-Thinking achieves state-of-the-art performance among models of comparable size. </p>
+                </td>
+                  <script>
+                    const toggleBtn = document.getElementById('toggle-btn');
+                    const hiddenAuthors = document.getElementById('hidden-authors');
+                    const authorCount = document.getElementById('author-count');
+                    let isExpanded = false;
+
+                    toggleBtn.addEventListener('click', function() {
+                        if (isExpanded) {
+                            // Collapse
+                            hiddenAuthors.style.display = 'none';
+                            authorCount.style.display = 'inline';
+                            toggleBtn.textContent = 'Show all authors';
+                            isExpanded = false;
+                        } else {
+                            // Expand
+                            hiddenAuthors.style.display = 'inline';
+                            authorCount.style.display = 'none';
+                            toggleBtn.textContent = 'Show fewer authors';
+                            isExpanded = true;
+                        }
+                    });
+                </script>
+              </tr>
+              
+              <tr bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="image-container">
                     <img src="images/cogvlm2_thumbnail.jpg" alt="CogVLM2 architecture" width="250"
                     style="border-style: none">
                   </div>
